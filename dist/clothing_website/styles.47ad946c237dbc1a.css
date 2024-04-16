@@ -1,0 +1,144 @@
+:root {
+  --primary-color: #b21616;
+  --primary-color-dark: #f01e0f6e;
+  --primary-color-light: hsl(242, 74%, 21%);
+  --button-color: #010e09;
+  --secondary-color: #30f457;
+  --tertiary-color: #000;
+  --transition: all 0.5s cubic-bezier(0.12, -0.34, 0, 1.66);
+}
+* {
+  font-family: Poppins, sans-serif;
+  transition: var(--transition);
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 75px;
+  font-weight: 400;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+h3 {
+  font-size: 25px;
+  font-weight: 400;
+}
+p {
+  font-size: 16px;
+}
+button {
+  outline: none;
+  padding: 10px 20px;
+  background-color: var(--button-color);
+  color: #e8eeec;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+button:active {
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  box-shadow: 1px 1px 1px 1px #000;
+}
+button:focus {
+  outline: none;
+  border: none;
+}
+button:hover {
+  border-radius: 70px;
+}
+input {
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  width: 60%;
+  border-radius: 5px;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+input:active {
+  border: 0px var(--primary-color) solid;
+  border-radius: 5px;
+  outline: none;
+}
+input:focus {
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 1px #000;
+  outline: none;
+}
+.input-field {
+  display: block;
+  text-align: center;
+  height: auto;
+  padding: 10px;
+}
+.input-field-label {
+  font-size: 14px;
+  color: #eee;
+}
+.text {
+  font-size: 60px;
+  color: inherit;
+}
+.title {
+  font-size: 25px;
+  color: inherit;
+}
+.subtitle {
+  font-size: 25px;
+  color: inherit;
+}
+.row {
+  display: flex;
+}
+.col {
+  display: block;
+}
+.red {
+  background-color: red;
+  padding: 10px 20;
+}
+.about-us {
+  padding: 40px;
+  text-align: left;
+  height: 73vh;
+  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://wallpapers.com/images/hd/grocery-store-1920-x-1080-background-ca4ksc5m7j9y7kon.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.about-us h1 {
+  text-align: center;
+  font-size: 100;
+  margin-bottom: 20px;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.about-us p {
+  color: #fff;
+  font-size: 40px;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: red; /* Change the background color to red */
+  color: #fff;
+
+  text-align: center;
+}
